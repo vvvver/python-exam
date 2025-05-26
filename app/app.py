@@ -34,7 +34,3 @@ def create_app():
     app.register_blueprint(stats_bp)
     return app
 
-app = create_app()
-
-if __name__ == '__main__':
-    app.run(debug=True, use_reloader=True)
