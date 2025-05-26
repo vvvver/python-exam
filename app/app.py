@@ -1,10 +1,10 @@
 from uuid import uuid4
 from flask import Flask, session
 from markupsafe import Markup
-from models import db, login_manager
-from auth import auth_bp
-from stats import stats_bp
-from books import main as books_bp, render_md
+from .models import db, login_manager
+from .auth import auth_bp
+from .stats import stats_bp
+from .books import main as books_bp, render_md
 import os
 
 def create_app():
