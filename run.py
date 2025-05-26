@@ -1,10 +1,12 @@
 from app.app import create_app
 from app.models import db
+from app.create_bd import seed
 import os
 app = create_app()
 
 with app.app_context():
     db.create_all()
+    seed()
     
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
