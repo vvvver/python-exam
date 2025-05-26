@@ -1,6 +1,6 @@
 from app.app import create_app
 from app.models import db
-from app.create_bd import seed
+from app.create_db import seed
 import os
 app = create_app()
 
