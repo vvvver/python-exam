@@ -11,7 +11,7 @@ def create_app():
     app = Flask(__name__, static_folder='static')
     app.config.update(
         SECRET_KEY='secret-key',
-        SQLALCHEMY_DATABASE_URI='postgresql://postgres:1212@localhost:5432/exam_db',
+        SQLALCHEMY_DATABASE_URI='postgresql://postgres:1212@localhost:5432/examdb',
         SQLALCHEMY_TRACK_MODIFICATIONS=False,
         UPLOAD_FOLDER=os.path.join(app.root_path, 'static', 'covers')
     )
