@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 import io
 from flask import Blueprint, render_template, request, redirect, send_file, url_for, flash
 from flask_login import current_user
-from models import db, Visit, Book, User
+from .models import db, Visit, Book, User
 from sqlalchemy import func
 
 stats_bp = Blueprint('stats', __name__, template_folder='templates', url_prefix='/stats')
