@@ -1,4 +1,3 @@
-from .app import app
 from .models import db, Role, User, Genre
 
 def seed():
