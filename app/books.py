@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, request, redirect, session, url_fo
 from flask_login import login_required, current_user
 from sqlalchemy import func
 from werkzeug.utils import secure_filename
-from models import Visit, db, Book, Genre, Cover, Review, login_manager
+from .models import Visit, db, Book, Genre, Cover, Review, login_manager
 from werkzeug.datastructures import MultiDict
 from datetime import date, datetime, timedelta
 import os
